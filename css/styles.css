@@ -1,0 +1,101 @@
+.myName{
+	text-align: center;
+	font-size: 5em;
+}
+
+.myInfo{
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.nav{
+	padding-top: 1em;
+	text-align: center;
+}
+
+.row {
+    width: 100%;
+    margin: 0px auto;
+    max-width: 62.5em;
+}
+
+.nameTitle{
+	text-align: center;
+	color: white;
+	padding-top: 12em;
+}
+
+.resumeButton{
+	text-align: center;
+	padding-bottom: 3em;
+}
+
+.padSide{
+    padding-right: 22%;
+    padding-left: 22%;
+}
+
+.box {
+    background-color: #498ce8;
+    overflow: auto;
+}
+
+.images {
+	height: 10em;
+	width: 10em;
+}
+
+.infoPad{
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+
+.footer{
+	text-align: center;
+	padding-top: 1em;
+}
+
+
+#navbar a:link {
+    color: white;
+}
+
+#navbar a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#navbar a:hover {
+    color: white;
+}
+
+/* selected link */
+#navbar a:active {
+    color: white;
+}
+
+#navbar ul{
+    list-style-type: none;
+}
+
+#navbar li{
+	display: inline;
+}
+
+#navbar {
+	background:#498ce8;
+	width: 100%;
+	text-align: center;
+}
+
+.fixedNav{
+    position:fixed;
+    top:0;
+}
+
+@media screen and (min-width: 1300px){
+	.padBox{
+		padding-right: 22%;
+		padding-left: 22%;
+	}
+}
