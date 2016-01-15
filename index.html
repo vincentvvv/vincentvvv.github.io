@@ -1,288 +1,336 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="img/icon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <title>Vincent Vuong</title>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="img/icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Vincent Vuong</title>
 </head>
-
 <body>
-    <div class="box">
-        <div class="row nameTitle">
-            <div class="row">
-              <div class="col-xs-12 myName centerText">Vincent Vuong</div>
-            </div>
-                <!-- description -->
-            <div class="row">
-                <div class="col-xs-3"></div>
-                <div class="col-xs-6 myInfo centerText">Student &amp; Software Developer</div>
-                <div class="col-xs-3"></div>
-            </div>
-            <hr>
-        </div>
-
-        <!-- nav-->
-        <div id="navbar">
-            <ul>
-                <li><a href="#">home</a></li> - 
-                <li><a href="#about">about</a></li> -
-                <li><a href="#work">work</a></li> -
-                <li><a href="#projects">projects</a></li> -
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </div>
-
-            <div class="row resumeButton">
-                <div class="col-xs-3"></div>
-                <div class="col-xs-6"><a href="downloads/vincent_vuong_resume.pdf" class="btn btn-info">Resume</a></div>
-                <div class="col-xs-3"></div>
-            </div>
+  <div class="header">
+    <div class="row nameTitle">
+      <div class="col-xs-12 myName">Vincent Vuong</div>
+        <!-- description -->
+        <div class="col-xs-12 myInfo">Student &amp; Software Developer</div>
     </div>
-
-    <div class="padSide">
-        <div id="about">
-            <div class="row infoPad">
-                <div class="row">
-                    <div class="col-xs-8">
-                        <h1>Hi, I'm Vincent</h1>
-                        <h3>I want to build products that will enhance the lives of others!</h3>
-                    </div>
-                    <div class="col-xs-4">
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <img class="img-circle images" src="img/beach.jpg">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="row">
-                    <p>I am a Computer Science Major at the University of Waterloo.</p>
-
-                    <p>My passion for computer science sparked when I learned my first programming language, scheme, during my first year of University. I am a hands on learner, and I enjoy meeting new people!</p>
-
-                    <p>My Skills:</p>
-                    <ul>
-                        <li>HTML/CSS/PHP</li>
-                        <li>C++/C#/C</li>
-                        <li>Ruby</li>
-                        <li>Unity3D</li>
-                        <li>Android SDK</li>
-                    </ul>
-                    <p>My main interests include:</p>
-                    <ul>
-                        <li><i class="fa fa-android"></i> - Android development</li>
-                        <li><i class="fa fa-code"></i> - Web development</li>
-                        <li><i class="fa fa-gamepad"></i> - Game Development</li>
-                    </ul>
-                    <p>Aside from school and programming, I also enjoy playing volleyball, drawing/sketching, hanging out with friends, and also weight training.</p>
-                </div>
+    <br>
+    <nav class="navbar navbar-default theNavbar">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <div class="row">
+          <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="downloads/vincent_vuong_resume.pdf">Resume</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
             </div>
+          <div class="col-xs-2"></div>
         </div>
+      </div>
+    </nav>
+  </div>
 
-        <hr>
-
-        <div id="work">
-            <h1> Work Experience </h1>
-            <div class="media infoPad">
-              <div class="media-left"><img class="media-object images img-circle" src="img/oracle/oracle.png"></div>
-              <div class="media-body">
-                <h2 class="media-heading"><a href="https://www.oracle.com/marketingcloud/products/cross-channel/marketing-to-businesses.html">Oracle Eloqua</a></h2>
-                <h4>Dev-Ops (co-op)</h4>
-                <ul>
-                    <li>Wrote Sensu scripts to monitor virtual machines</li>
-                    <li>Automated the retrieval of metrics to be graphed and displayed on Grafana</li>
-                    <li>Developed a webpage with PHP, HTML, and CSS to display VM statistics</li> 
-                    <li>Side tasks: support tickets, hot fixes, and monitoring of systems</li>
-                </ul>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#oracle" aria-expanded="false" aria-controls="oracle">
-                  Read More
-                </button>
-                <div class="collapse" id="oracle">
-                  <div class="well">
-                    <p>This was my first ever co-op term. My main roles included providing users with VM access, running mySQL queries, support tickets, and also hot fixes. In my position, I was able to familiarize myself with Windows and Linux systems. Moreover, I was able to learn about agile development and the importance of stories. Aside from my main roles, I was also assigned side projects.</p> 
-                    <p><strong>Projects:</strong></p>
-                    <ul>
-                        <li>Grafana (I have removed values and database names for privacy)</li>
-                            <p>I have utilized Grafana to create dashboards to display time-series metrics.</p>
+  <div class="container">
+    <div id="about" class="padTop padBottom">
+      <div class="row padTop">
+        <div class="col-xs-8">
+          <h1>Hi, I'm Vincent</h1>
+          <h3>I want to build products that will enhance the lives of others!</h3>
+        </div>
+        <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/beach.jpg" style="width: 150px; height: 150px;"></div>
+        <br>
+        <div class="col-xs-12">
+          <p>I am a Computer Science Major at the University of Waterloo.</p>
+          <p>My passion for computer science sparked when I learned my first programming language, scheme, during my first year of University. I am a hands on learner, and I enjoy meeting new people!</p>
+          <p>My Skills:</p>
+          <ul>
+            <li>HTML/CSS/PHP</li>
+            <li>C++/C#/C</li>
+            <li>Ruby</li>
+            <li>Unity3D</li>
+            <li>Android SDK</li>
+          </ul>
+          <p>My main interests include:</p>
+          <ul>
+            <li><i class="fa fa-android"></i> - Android development</li>
+            <li><i class="fa fa-code"></i> - Web development</li>
+            <li><i class="fa fa-gamepad"></i> - Game Development</li>
+          </ul>
+          <p>Aside from school and programming, I also enjoy playing volleyball, drawing/sketching, hanging out with friends, and also weight training.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div id="work" class="padTop padBottom">
+        <div class="row padTop">
+        <h1 class="col-xs-12"> Work Experience </h1><br><br>
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/oracle/oracle.png"></div>
+                <div class="col-xs-8">
+                  <div class="row">
+                    <div class="col-xs-12"><h2>Oracle Eloqua</h2><h4>Dev-Ops (co-op)</h4></div>
+                      <div class="col-xs-12">
+                        <ul>
+                          <li>Wrote Sensu scripts to monitor virtual machines</li>
+                          <li>Automated the retrieval of metrics to be graphed and displayed on Grafana</li>
+                          <li>Developed a webpage with PHP, HTML, and CSS to display VM statistics</li> 
+                          <li>Side tasks: support tickets, hot fixes, and monitoring of systems</li>
+                        </ul>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#oracle" aria-expanded="false" aria-controls="oracle"> Read More </button>
+                        <div class="collapse" id="oracle">
+                          <div class="well">
+                            <p>This was my first ever co-op term. My main roles included providing users with VM access, running mySQL queries, support tickets, and also hot fixes. In my position, I was able to familiarize myself with Windows and Linux systems. Moreover, I was able to learn about agile development and the importance of stories. Aside from my main roles, I was also assigned side projects.</p> 
+                            <p><strong>Projects:</strong></p>
                             <ul>
+                              <li>Grafana (I have removed values and database names for privacy in the pictures)</li>
+                              <p>I have utilized Grafana to create dashboards to display time-series metrics.</p>
+                              <ul>
                                 <li>TeamCity Build Times</li>
                                 <p>I have automated a process to retrieve data from TeamCity to be placed in the database influxDB, to generate a dashboard to display the total build times.</p>
-                                <img class="images" src="img/oracle/releaseMetrics.png">
+                                <img class="img-responsive" src="img/oracle/releaseMetrics.png">
                                 <li>VM Statistics</li>
                                 <p>I have wrote Ruby scripts for Sensu monitoring system, to populate a Graphite database, with data pertaining to the VMs cpu usage, disk space, and also RAM usage.</p>
-                                <img class="images" src="img/oracle/vmMetrics.png">
+                                <img class="img-responsive" src="img/oracle/vmMetrics.png">
+                                </ul>
+                              <li>Web Development</li>
+                              <p>I have created a webpage with HTML, PHP, and CSS to display information pertaining to VMs.</p> 
                             </ul>
-                        <li>Web Development</li>
-                            <p>I have created a webpage with HTML, PHP, and CSS to display information pertaining to VMs.</p> 
-                    </ul>
-                    <p> All in all, I feel that I have learned a lot in this co-op term. Aside from technical skills, I feel that my attention to details has improved tremendously as my position was really dependent on it.</p>
+                            <p> All in all, I feel that I have learned a lot in this co-op term. Aside from technical skills, I feel that my attention to details has improved tremendously as my position was really dependent on it.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
             </div>
-        </div>
-
+          </div>
         <hr>
-
-        <div id="projects">
-            <h1> Side Projects </h1>
-            <div class="media infoPad">
-              <div class="media-left"><img class="media-object images img-circle" src="img/gameJam/logo.png"></div>
-              <div class="media-body">
-                <h2 class="media-heading">Global Game Jam Winter 2015</h2>
-                <h4>Hackathon</h4>
-                <ul>
-                    <li>Designed parts of the UI, map, animations, and graphics of the game</li>
-                    <li>Won the award for the Best Story-Line</li>
-                </ul>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#gameJam" aria-expanded="false" aria-controls="gameJam">
-                  Read More
-                </button>
-                <div class="collapse" id="gameJam">
-                  <div class="well">
-                    <p>At this event, I was still fairly new to programming. I was afraid that I wasn't going to be of any help to my team members. However, I was wrong. I was able to contribute as the artist and level design of the team. This event was a huge learning curve for myself. I learned the basics of Unity, how games go from alpha phase to completion within a short 48 hour time frame, and most importanlty how to communicate with a team to get work done.</p>
-                    <p><a href="https://dl.dropboxusercontent.com/u/31582656/Destiny%20Drawer%20Game/Builds.html" class="btn btn-default">Link to Game <i class="fa fa-gamepad"></i></a></p>
-                    <img class="images" src="img/gameJam/team.jpg">
-                    <img class="images" src="img/gameJam/ad.png">
-                    <img class="images" src="img/gameJam/play1.png">
-                    <p>Team from left to right: Vincent Vuong, Kyle Schieck, Johnathon Barker</p>
+        <div id="projects" class="padTop padBottom">
+          <div class="row padTop">
+            <h1 class="col-xs-12"> Side Projects </h1><br><br>
+              <div class="col-xs-12">
+                <div class="row">
+                  <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/gameJam/logo.png"></div>
+                    <div class="col-xs-8">
+                      <div class="row">
+                        <div class="col-xs-12"><h2>Global Game Jam Winter 2015</h2><h4>Hackathon</h4></div>
+                          <div class="col-xs-12">
+                            <ul>
+                              <li>Designed parts of the UI, map, animations, and graphics of the game</li>
+                              <li>Won the award for the Best Story-Line</li>
+                            </ul>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#gameJam" aria-expanded="false" aria-controls="gameJam"> Read More </button>
+                            <div class="collapse" id="gameJam">
+                              <div class="well">
+                                <p>At this event, I was still fairly new to programming. I was afraid that I wasn't going to be of any help to my team members. However, I was wrong. I was able to contribute as the artist and level design of the team. This event was a huge learning curve for myself. I learned the basics of Unity3D, how games go from alpha phase to completion within a short 48 hour time frame, and most importanlty how to communicate with a team to get work done.</p> 
+                                <p><a href="https://dl.dropboxusercontent.com/u/31582656/Destiny%20Drawer%20Game/Builds.html" class="btn btn-default">Link to Game <i class="fa fa-gamepad"></i></a></p>
+                                <div class="row">
+                                  <div class="col-xs-8 col-sm-4">
+                                <img class="img-responsive" src="img/gameJam/team.jpg">
+                                <p>Team from left to right: Vincent Vuong, Kyle Schieck, Johnathon Barker</p>
+                                </div>
+                                <div class="col-xs-8 col-sm-4">
+                                <img class="img-responsive" src="img/gameJam/ad.png"></div>
+                                <div class="col-xs-8 col-sm-4">
+                                <img class="img-responsive" src="img/gameJam/play1.png">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
             <hr>
-
-            <div class="media infoPad">
-              <div class="media-left"><img class="media-object images img-circle" src="img/24hours/nspire.png"></div>
-              <div class="media-body">
-                <h2 class="media-heading">24 Hour Start Up</h2>
-                <h4>Hackathon</h4>
-                <ul>
-                    <li>Worked together with 5 others to develop an application that generates 
-                        real time analytics to help city planners manage their resources more efficiently</li>
-                    <li>Won the award for the Best Use of the City of Kitchener’s Open Data</li>
-                </ul>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#24hour" aria-expanded="false" aria-controls="24hour">
-                  Read More
-                </button>
-                <div class="collapse" id="24hour">
-                  <div class="well">
-                    <p>In my first term of University, my professor has suggested that we should attend this Hackathon. I did not know what a Hackathon was at the time, and so I attended. The atmosphere was very different compared to a classroom. Everyone is very friendly, and they all have a similar goal, which was to win. The focus of this event was to build a product with the city of Kitchener's open city data. I have joined a team, with the goal of gamifying the data to generate real time analytics that could be used by city planners to better allocate the city's resources. As I was fairly new to programming, I mainly focused on learning, creating waterframes, and also designing the product. The product we created was "Citivate", where data is generated when users use city resources. The data is then used to create real-time analytics. It was a great learning experience and I feel that I have learned a lot. In the end, we did not win 1st,2nd, or 3rd place. However, we did win a prize for being the team that had created a product that has the best use of the open city data!
-                    <br>
-                    <p><a href="https://github.com/mmmoussa/Citivate_backend" class="btn btn-default">Link to Code <i class="fa fa-code"></i></a></p>
-                    <br>
-                    <img class="images" src="img/24hours/team.png">
-                    <img class="images" src="img/24hours/logo.png">
-                    <img class="images" src="img/24hours/ad.jpg">
-                    <img class="images" src="img/24hours/app.jpg">
-                    <img class="images" src="img/24hours/data.jpg">
-                    <p>Team from left to right: Joanna, Vincent, Nikolas, Krysta, Bilal, Mohammad </p>
+              <div class="row">
+                  <div class="col-xs-12">
+                    <div class="row">
+                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/24hours/nspire.png"></div>
+                        <div class="col-xs-8">
+                          <div class="row">
+                            <div class="col-xs-12"><h2>24 Hour Start Up</h2>
+                            <h4>Hackathon</h4></div>
+                              <div class="col-xs-12">
+                                <ul>
+                                <li>Worked together with 5 others to develop an application that generates 
+                                        real time analytics to help city planners manage their resources more efficiently</li>
+                                <li>Won the award for the Best Use of the City of Kitchener’s Open Data</li>
+                                </ul>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#24hour" aria-expanded="false" aria-controls="24hour"> Read More </button>
+                                <div class="collapse" id="24hour">
+                                  <div class="well">
+                                    <p>In my first term of University, my professor has suggested that we should attend this Hackathon. I did not know what a Hackathon was at the time, and so I attended. The atmosphere was very different compared to a classroom. Everyone is very friendly, and they all have a similar goal, which was to win. The focus of this event was to build a product with the city of Kitchener's open city data. I have joined a team, with the goal of gamifying the data to generate real time analytics that could be used by city planners to better allocate the city's resources. As I was fairly new to programming, I mainly focused on learning, creating waterframes, and also designing the product. The product we created was "Citivate", where data is generated when users use city resources. The data is then used to create real-time analytics. It was a great learning experience and I feel that I have learned a lot. In the end, we did not win 1st,2nd, or 3rd place. However, we did win a prize for being the team that had created a product that has the best use of the open city data!
+                                    <br>
+                                    <p><a href="https://github.com/mmmoussa/Citivate_backend" class="btn btn-default">Link to Code <i class="fa fa-code"></i></a></p>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col-xs-8 col-sm-4">
+                                    <img class="img-responsive" src="img/24hours/team.png">
+                                    <p>Team from left to right: Joanna, Vincent, Nikolas, Krysta, Bilal, Mohammad </p>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4">
+                                    <img class="img-responsive" src="img/24hours/logo.png"></div>
+                                    <div class="col-xs-8 col-sm-4">
+                                    <img class="img-responsive" src="img/24hours/ad.jpg">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4">
+                                    <img class="img-responsive" src="img/24hours/app.jpg">
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4">
+                                    <img class="img-responsive" src="img/24hours/data.jpg">
+                                    </div>        
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <hr>
+              <div class="row">
+                  <div class="col-xs-12">
+                    <div class="row">
+                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/2Dplatformer/logo.png"></div>
+                        <div class="col-xs-8">
+                          <div class="row">
+                            <div class="col-xs-12"><h2>2D Platformer Game</h2>
+                            <h4>Game Development</h4></div>
+                              <div class="col-xs-12">
+                                <ul>
+                                  <li>Scripted a 2D platformer game in Unity3D with C#</li>
+                                </ul>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#2Dplat" aria-expanded="false" aria-controls="2Dplat"> Read More </button>
+                                <div class="collapse" id="2Dplat">
+                                  <div class="well">
+                                    <p>After being exposed to Unity3D in the Global Game Jam 2015, I wanted to explore game development. I really enjoy playing 2D platformer games, and I especially love pixel art. A popular MMORPG that I used to play in the past was Maplestory. I wanted to replicate the game as much as possible with the Unity physics engine. Although, some aspects of the game does not feel the same as the original. I feel that it is still an enjoyable replica of the original. This project has taught me the basics of OOP, and also the Unity Engine.
+                                    </p>
+                                    <p><a href="Game/2Dplatformer.html" class="btn btn-default">Link to Game <i class="fa fa-gamepad"></i></a></p>
+                                    <br>
+                                    <div class="row">
+                                      <div class="col-xs-12">
+                                    <img class="img-responsive" src="img/2Dplatformer/play1.png">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <hr>
+              <div class="row">
+                  <div class="col-xs-12">
+                    <div class="row">
+                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/cc3k/icon.jpg"></div>
+                        <div class="col-xs-8">
+                          <div class="row">
+                            <div class="col-xs-12"><h2>Chamber Crawler</h2>
+                            <h4>Game Development</h4></div>
+                              <div class="col-xs-12">
+                                <ul>
+                                 <li>Worked with a partner, Shadwell, to create a chamber crawler game in C++</li>
+                                </ul>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#cc3k" aria-expanded="false" aria-controls="cc3k"> Read More </button>
+                                <div class="collapse" id="cc3k">
+                                  <div class="well">
+                                    <p>In my 2A summer term at the University of Waterloo, I have taken CS246. In this course, I have learned C++ and OOP. For the final project of this course, we were required to work in pairs to develop a C++ game. The game choices that we had to choose from were chess, monoploy, or a chamber crawler game.</p>
+                                    <p> As I am a huge fan of Chamber Crawlers, me and my partner, Shadwell, chose to work on the Chamber Crawler game. Although we were faced with many different challenges, specificaly scheduling, memmory errors, and also different coding styles, we were able to overcome them and complete the project. All in all, this project has taught me many key computer science concepts. Specifically polymorphism, classes, objects, and also team work. </p>
+                                    <div class="row">
+                                      <div class="col-xs-12">
+                                    <img class="img-responsive" src="img/cc3k/cc3k.png">
+                                    </div>       
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <hr>
+              <div class="row">
+                  <div class="col-xs-12">
+                    <div class="row">
+                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/calculator/icon.png"></div>
+                        <div class="col-xs-8">
+                          <div class="row">
+                            <div class="col-xs-12"><h2>Calculator App</h2>
+                            <h4>Android Development</h4></div>
+                              <div class="col-xs-12">
+                                <ul>
+                                  <li>First android application developed in Android SDK with Java</li>
+                                </ul>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#calculator" aria-expanded="false" aria-controls="calculator"> Read More </button>
+                                <div class="collapse" id="calculator">
+                                  <div class="well">
+                                    <p> I have always wanted to learn android development. I wanted to do something simple to learn the basics of Android SDK, and also some java. In this project, I was able to replicate a basic calculator that does basic arithmetic operations. (+,-,*,/,%)</p>
+                                    <div class="row">
+                                      <div class="col-xs-12">
+                                    <img class="img-responsive" src="img/calculator/calculator.png">
+                                    </div>       
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <hr>
+              <div class="row">
+                  <div class="col-xs-12">
+                    <div class="row">
+                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/dots/logo.png"></div>
+                        <div class="col-xs-8">
+                          <div class="row">
+                            <div class="col-xs-12"><h2>Dots</h2>
+                            <h4>Game Development</h4></div>
+                              <div class="col-xs-12">
+                                <ul>
+                                  <li>Clone of a popular game: <a href="http://weplaydots.com/twodots.html">Two Dots</a></li>
+                                </ul>
+                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#dot" aria-expanded="false" aria-controls="dot"> Read More </button>
+                                <div class="collapse" id="dot">
+                                  <div class="well">
+                                    <p> The game Two Dots, on the play store, was a very enjoyable puzzle game. I really liked the logic behind the game, and I wanted to try to replicate. Hence, the start of this project. I have developed the game in Unity3D and I have added touch features to be playable on my android device. To create this game I have used linked-lists to store the selected dots, and also the line renderer in Unity to dynamically connect the dots.</p>
+                                    <div class="row">
+                                      <div class="col-xs-12">
+                                    <img class="img-responsive" src="img/dots/play1.png">
+                                    </div>       
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="media infoPad">
-              <div class="media-left"><img class="media-object images img-circle" src="img/2Dplatformer/logo.png"></div>
-              <div class="media-body">
-                <h2 class="media-heading">2D Platformer Game</h2>
-                <h4>Game Development</h4>
-                <ul>
-                    <li>Scripted a 2D platformer game in Unity3D with C#</li>
-                </ul>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#2Dplat" aria-expanded="false" aria-controls="2Dplat">
-                  Read More
-                </button>
-                <div class="collapse" id="2Dplat">
-                  <div class="well">
-                    <p>After being exposed to Unity3D in the Global Game Jam 2015, I wanted to explore game development. I really enjoy playing 2D platformer games, and I especially love pixel art. A popular MMORPG that I used to play in the past was Maplestory. I wanted to replicate the game as much as possible with the Unity physics engine. Although, some aspects of the game does not feel the same as the original. I feel that it is still an enjoyable replica of the original. This project has taught me the basics of OOP, and also the Unity Engine.
-                    </p>
-                    <p><a href="Game/2Dplatformer.html" class="btn btn-default">Link to Game <i class="fa fa-gamepad"></i></a></p>
-                    <img class="images" src="img/2Dplatformer/play1.png">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="media infoPad">
-              <div class="media-left"><img class="media-object images img-circle" src="img/cc3k/icon.jpg"></div>
-              <div class="media-body">
-                <h2 class="media-heading">Chamber Crawler</h2>
-                <h4>Game Development</h4>
-                <ul>
-                    <li>Worked with a partner, Shadwell, to create a chamber crawler game in C++</li>
-                </ul>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#cc3k" aria-expanded="false" aria-controls="cc3k">
-                  Read More
-                </button>
-                <div class="collapse" id="cc3k">
-                  <div class="well">
-                    <p>In my 2A summer term at the University of Waterloo, I have taken CS246. In this course, I have learned C++ and OOP. For the final project of this course, we were required to work in pairs to develop a C++ game. The game choices that we had to choose from were chess, monoploy, or a chamber crawler game.</p>
-                    <p> As I am a huge fan of Chamber Crawlers, me and my partner, Shadwell, chose to work on the Chamber Crawler game. Although we were faced with many different challenges, specificaly scheduling, memmory errors, and also different coding styles, we were able to overcome them and complete the project. All in all, this project has taught me many key computer science concepts. Specifically polymorphism, classes, objects, and also team work. </p>
-                    <img class="images" src="img/cc3k/cc3k.png">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="media infoPad">
-              <div class="media-left"><img class="media-object images img-circle" src="img/calculator/icon.png"></div>
-              <div class="media-body">
-                <h2 class="media-heading">Calculator App</h2>
-                <h4>Android Development</h4>
-                <ul>
-                    <li>First android application developed in Android SDK with Java</li>
-                </ul>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#calculator" aria-expanded="false" aria-controls="calculator">
-                  Read More
-                </button>
-                <div class="collapse" id="calculator">
-                  <div class="well">
-                    <p> I have always wanted to learn android development. I wanted to do something simple to learn the basics of Android SDK, and also some java. In this project, I was able to replicate a basic calculator that does basic arithmetic operations. (+,-,*,/,%)</p>
-                    <center><img class="images" src="img/calculator/calculator.png"></center>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <hr>
-
-            <div class="media infoPad">
-              <div class="media-left"><img class="media-object images img-circle" src="img/dots/logo.png"></div>
-              <div class="media-body">
-                <h2 class="media-heading">Dots</h2>
-                <h4>Game Development</h4>
-                <ul>
-                    <li>Clone of a popular game: <a href="http://weplaydots.com/twodots.html">Two Dots</a></li>
-                </ul>
-                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#dots" aria-expanded="false" aria-controls="dots">
-                    Read More
-                </button>
-                <div class="collapse" id="dots">
-                  <div class="well">
-                    <p>During my first co-op term at Oracle Eloqua, I had to take a 1 hour commute everyday. To kill my boredom, I tend to play games on my phone. The game Two Dots, on the play store, was a very enjoyable puzzle game. I really liked the logic behind the game, and I wanted to try to replicate. Hence, the start of this project. I have developed the game in Unity3D and I have added touch features to be playable on my android device. To create this game I have used linked-lists to store the selected dots, and also the line renderer in Unity to dynamically connect the dots.</p>
-                    <center><img src="img/dots/play1.png"></center>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-
-        <hr>
 
         <div id="contact">
             <center><h1> Contact Me </h1></center>
@@ -316,7 +364,7 @@
                     </ul>
                 </div>
             </div>
-            <h3 class="footer"><a href="#"><i class="fa fa-angle-up"></i></a></h3>
+            <p class="footer arrow"><a href="#"><i class="fa fa-angle-up"></i></a></p>
             <p class="footer">Copyright &copy; Vincent Vuong 2016</p>
         </div>
     </div>
@@ -326,16 +374,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- Fix nav bar -->
+    <!-- Fix nav bar
+     -->
     <script>
-    $(window).scroll(function() {
-                if ($(window).scrollTop() > 50) {
-                    $('#navbar').addClass('fixedNav');
-                } else {
-                    $('#navbar').removeClass('fixedNav');
-                }
-    
-            });
+    $(document).ready(function () {
+        var nav = $('.theNavbar');
+        var navPosY = nav.offset().top;
+
+        function scrollDown() {
+            if ($(window).scrollTop() >= navPosY) {
+                $('.theNavbar').addClass('navbar-fixed-top');
+            } else {
+                $('.theNavbar').removeClass('navbar-fixed-top');
+            }
+        }
+        document.onscroll = scrollDown;
+    });
+
     </script>
     <!-- google analytics -->
     <script>
