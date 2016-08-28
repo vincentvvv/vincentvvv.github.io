@@ -1,452 +1,286 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/png" href="img/icon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/animate.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Vincent Vuong</title>
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-<body id="page-top">
-  <div class="header">
-    <div class="row nameTitle">
-      <div class="col-xs-12 myName wow fadeIn">Vincent Vuong</div>
-        <!-- description -->
-        <div class="col-xs-12 myInfo wow fadeInRight">Student &amp; Software Developer</div>
+<body>
+
+  <nav class="blue-grey darken-4">
+    <div>
+      <a href="#home" class="brand-logo">Vincent Vuong</a>
+      <a href="#home" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="downloads/vincent_vuong_resume.pdf">Resume</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="downloads/vincent_vuong_resume.pdf">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home -->
+  <section id="homeBG">
+    <a class="nav-link" name="home"></a>
+    <div class="fill-page">
+      <div class="home">
+        <div class="row">
+          <div class="col s12 center">
+            <h3>Vincent Vuong</h3>
+          </div>
+          <div class="col s12 center">
+            <div class="tags">Student &amp; Software Developer</div>
+          </div>
+          <div class ="col s12">
+            <a href="#about"><i class="material-icons downArrow center">keyboard_arrow_down</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section>
+    <a class="nav-link" name="about"></a>
+    <div class="aboutMe">
+      <div class="title">
+        <span>About Me</span>
+      </div>
+      <div class="row container">
+        <div class="col s12 m12 l8">
+          <h3> Hi, I'm Vincent!</h3>
+          <h5> I am a Computer Science major at the University of Waterloo, Canada.</h5>
+          <h5> I learn best through my own mistakes and failures. There is nothing more satisfying in life than to find the solution to a problem after countless hours of struggling.</h5>
+          <br>
+        </div>
+        <!-- Pic -->
+        <div class="col s12 m12 l4 center">
+          <img src="images/prof.jpg" class="responsive-img circle myPic z-depth-2">
+        </div>
+        <!-- Hobbies -->
+        <div class="col s12 m12">
+          <h5> Aside from programming, I really enjoy playing sports and staying active! </h5>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="imageWrapper">
+                <img class="responsive-img" src="images/archery.jpg">
+                <h5 class="imageDes">Archery Tag</h5>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="imageWrapper">
+                <img class="responsive-img" src="images/dodgeball.jpg">
+                <h5 class="imageDes">Dodgeball Intramurals</h5>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="imageWrapper">
+                <img class="responsive-img" src="images/volleyball.jpg">
+                <h5 class="imageDes">Volleyball Intramurals</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section>
+    <a class="nav-link" name="work"></a>
+    <div>
+      <div class="title">
+        <span>Work Experience</span>
+      </div>
+      <br>
+      <div class="row container">
+        <div class="col s12 m6">
+          <div class="center container">
+            <a href="work/oracle.html"><img class="responsive-img" src="images/oracle/oracle.png"></a>
+            <h5 class="imageDes">Oracle Eloqua</h5>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <div class="center container">
+            <a href="work/doubleplay.html"><img class="responsive-img" src="images/doubleplay/logo.png"></a>
+            <h5 class="imageDes">DoublePlay Entertainment Inc.</h5>
+          </div>
+        </div>
+      </div>
     </div>
     <br>
-    <nav class="navbar navbar-default theNavbar">
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-          </button>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <div class="row">
-          <div class="col-xs-3"></div>
-            <div class="col-xs-6">
-              <ul class="nav navbar-nav">
-                <li class="hidden"><a  href="#page-top">Home</a></li>
-                <li><a  href="#about">About</a></li>
-                <li><a  href="downloads/vincent_vuong_resume.pdf">Resume</a></li>
-                <li><a  href="#work">Work</a></li>
-                <li><a  href="#projects">Projects</a></li>
-                <li><a  href="#contact">Contact</a></li>
-              </ul>
-            </div>
-          <div class="col-xs-3"></div>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="container">
-    <div id="about" class="padTop padBottom">
-      <div class="row padTop">
-        <div class="col-xs-8">
-          <h1>Hi, I'm Vincent</h1>
-          <h3>I want to build products that will enhance the lives of others!</h3>
-        </div>
-        <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/beach.jpg" style="width: 150px; height: 150px;"></div>
-        <br>
-        <div class="col-xs-12">
-          <p>I am a Computer Science Major at the University of Waterloo.</p>
-          <p>My passion for computer science sparked when I learned my first programming language, scheme, during my first year of University. I am a hands on learner, and I enjoy meeting new people!</p>
-          <p>My Skills:</p>
-          <ul>
-            <li>HTML/CSS/PHP</li>
-            <li>C++/C#/C</li>
-            <li>Ruby</li>
-            <li>Unity3D</li>
-            <li>Android SDK</li>
-          </ul>
-          <p>My main interests include:</p>
-          <ul>
-            <li><i class="fa fa-android"></i> - Android development</li>
-            <li><i class="fa fa-code"></i> - Web development</li>
-            <li><i class="fa fa-gamepad"></i> - Game Development</li>
-          </ul>
-          <p>Aside from school and programming, I also enjoy playing volleyball, drawing/sketching, hanging out with friends, and also weight training.</p>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div id="work" class="padTop padBottom">
-        <div class="row padTop">
-        <h1 class="col-xs-12"> Work Experience </h1><br><br>
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/oracle/oracle.png"></div>
-                <div class="col-xs-8">
-                  <div class="row">
-                    <div class="col-xs-12"><h2>Oracle Eloqua</h2><h4>Dev-Ops (co-op)</h4></div>
-                      <div class="col-xs-12">
-                        <ul>
-                          <li>Wrote Sensu scripts to collect usage data from virtual machines</li>
-                          <li>Automated the retrieval of metrics to be graphed and displayed on Grafana for identifiying build steps that require optimization</li>
-                          <li>Developed a webpage with PHP, HTML, and CSS to display VM statistics</li> 
-                          <li>Side tasks: support tickets, hot fixes, and monitoring of systems</li>
-                        </ul>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#oracle" aria-expanded="false" aria-controls="oracle"> Read More </button>
-                        <div class="collapse" id="oracle">
-                          <div class="well">
-                            <p>This was my first ever co-op term. My main roles included providing users with VM access, running mySQL queries, support tickets, and also hot fixes. In my position, I was able to familiarize myself with Windows and Linux systems. Moreover, I was able to learn about agile development and the importance of stories. Aside from my main roles, I was also assigned side projects.</p> 
-                            <p><strong>Projects:</strong></p>
-                            <ul>
-                              <li>Grafana (I have removed values and database names for privacy in the pictures)</li>
-                              <p>I have utilized Grafana to create dashboards to display time-series metrics.</p>
-                              <ul>
-                                <li>TeamCity Build Times</li>
-                                <p>I have automated a process to retrieve data from TeamCity to be placed in the database influxDB, to generate a dashboard to display the total build times.</p>
-                                <img class="img-responsive" src="img/oracle/releaseMetrics.png">
-                                <li>VM Statistics</li>
-                                <p>I have wrote Ruby scripts for Sensu monitoring system, to populate a Graphite database, with data pertaining to the VMs cpu usage, disk space, and also RAM usage.</p>
-                                <img class="img-responsive" src="img/oracle/vmMetrics.png">
-                                </ul>
-                              <li>Web Development</li>
-                              <p>I have created a webpage with HTML, PHP, and CSS to display information pertaining to VMs.</p> 
-                            </ul>
-                            <p> Overall, I feel that I have learned a lot in this co-op term. Aside from technical skills, I feel that my attention to details has improved tremendously as my position was really dependent on it.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <hr>
-        <div id="projects" class="padTop padBottom">
-          <div class="row padTop">
-            <h1 class="col-xs-12"> Side Projects </h1><br><br>
-              <div class="col-xs-12">
-                <div class="row">
-                  <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/gameJam/logo.png"></div>
-                    <div class="col-xs-8">
-                      <div class="row">
-                        <div class="col-xs-12"><h2>Global Game Jam Winter 2015</h2><h4>Hackathon</h4></div>
-                          <div class="col-xs-12">
-                            <ul>
-                              <li>Designed parts of the UI, map, animations, and graphics of the game</li>
-                              <li>Won the award for the Best Story-Line</li>
-                            </ul>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#gameJam" aria-expanded="false" aria-controls="gameJam"> Read More </button>
-                            <div class="collapse" id="gameJam">
-                              <div class="well">
-                                <p>At this event, I was still fairly new to programming. I was afraid that I wasn't going to be of any help to my team members. However, I was wrong. I was able to contribute as the artist and level design of the team. This event was a huge learning curve for myself. I learned the basics of Unity3D, how games go from alpha phase to completion within a short 48 hour time frame, and most importanlty how to communicate with a team to get work done.</p> 
-                                <p><a href="https://dl.dropboxusercontent.com/u/31582656/Destiny%20Drawer%20Game/Builds.html" class="btn btn-default">Link to Game <i class="fa fa-gamepad"></i></a></p>
-                                <div class="row">
-                                  <div class="col-xs-8 col-sm-4">
-                                <img class="img-responsive" src="img/gameJam/team.jpg">
-                                <p>Team from left to right: Vincent Vuong, Kyle Schieck, Johnathon Barker</p>
-                                </div>
-                                <div class="col-xs-8 col-sm-4">
-                                <img class="img-responsive" src="img/gameJam/ad.png"></div>
-                                <div class="col-xs-8 col-sm-4">
-                                <img class="img-responsive" src="img/gameJam/play1.png">
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            <hr>
-              <div class="row">
-                  <div class="col-xs-12">
-                    <div class="row">
-                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/24hours/nspire.png"></div>
-                        <div class="col-xs-8">
-                          <div class="row">
-                            <div class="col-xs-12"><h2>24 Hour Start Up</h2>
-                            <h4>Hackathon</h4></div>
-                              <div class="col-xs-12">
-                                <ul>
-                                <li>Worked together with 5 others to develop an application that generates 
-                                        real time analytics to help city planners manage their resources more efficiently</li>
-                                <li>Won the award for the Best Use of the City of Kitchener’s Open Data</li>
-                                </ul>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#24hour" aria-expanded="false" aria-controls="24hour"> Read More </button>
-                                <div class="collapse" id="24hour">
-                                  <div class="well">
-                                    <p>In my first term of University, my professor has suggested that we should attend this Hackathon. I did not know what a Hackathon was at the time, and so I attended. The atmosphere was very different compared to a classroom. Everyone is very friendly, and they all have a similar goal, which was to win. The focus of this event was to build a product with the city of Kitchener's open city data. I have joined a team, with the goal of gamifying the data to generate real time analytics that could be used by city planners to better allocate the city's resources. As I was fairly new to programming, I mainly focused on learning, creating waterframes, and also designing the product. The product we created was "Citivate", where data is generated when users use city resources. The data is then used to create real-time analytics. It was a great learning experience and I feel that I have learned a lot. In the end, we did not win 1st,2nd, or 3rd place. However, we did win a prize for being the team that had created a product that has the best use of the open city data!
-                                    <br>
-                                    <p><a href="https://github.com/mmmoussa/Citivate_backend" class="btn btn-default">Link to Code <i class="fa fa-code"></i></a></p>
-                                    <br>
-                                    <div class="row">
-                                      <div class="col-xs-8 col-sm-4">
-                                    <img class="img-responsive" src="img/24hours/team.png">
-                                    <p>Team from left to right: Joanna, Vincent, Nikolas, Krysta, Bilal, Mohammad </p>
-                                    </div>
-                                    <div class="col-xs-8 col-sm-4">
-                                    <img class="img-responsive" src="img/24hours/logo.png"></div>
-                                    <div class="col-xs-8 col-sm-4">
-                                    <img class="img-responsive" src="img/24hours/ad.jpg">
-                                    </div>
-                                    <div class="col-xs-8 col-sm-4">
-                                    <img class="img-responsive" src="img/24hours/app.jpg">
-                                    </div>
-                                    <div class="col-xs-8 col-sm-4">
-                                    <img class="img-responsive" src="img/24hours/data.jpg">
-                                    </div>        
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <hr>
-              <div class="row">
-                  <div class="col-xs-12">
-                    <div class="row">
-                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/2Dplatformer/logo.png"></div>
-                        <div class="col-xs-8">
-                          <div class="row">
-                            <div class="col-xs-12"><h2>2D Platformer Game</h2>
-                            <h4>Game Development</h4></div>
-                              <div class="col-xs-12">
-                                <ul>
-                                  <li>Scripted a 2D platformer game in Unity3D with C#</li>
-                                </ul>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#2Dplat" aria-expanded="false" aria-controls="2Dplat"> Read More </button>
-                                <div class="collapse" id="2Dplat">
-                                  <div class="well">
-                                    <p>After being exposed to Unity3D in the Global Game Jam 2015, I wanted to explore game development. I really enjoy playing 2D platformer games, and I especially love pixel art. A popular MMORPG that I used to play in the past was Maplestory. I wanted to replicate the game as much as possible with the Unity physics engine. Although, some aspects of the game does not feel the same as the original. I feel that it is still an enjoyable replica of the original. This project has taught me the basics of OOP, and also the Unity Engine.
-                                    </p>
-                                    <p><a href="game/2D/2Dplatformer.html" class="btn btn-default">Link to Game <i class="fa fa-gamepad"></i></a></p>
-                                    <br>
-                                    <div class="row">
-                                      <div class="col-xs-12">
-                                    <img class="img-responsive" src="img/2Dplatformer/play1.png">
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <hr>
-              <div class="row">
-                  <div class="col-xs-12">
-                    <div class="row">
-                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/cc3k/icon.jpg"></div>
-                        <div class="col-xs-8">
-                          <div class="row">
-                            <div class="col-xs-12"><h2>Chamber Crawler</h2>
-                            <h4>Game Development</h4></div>
-                              <div class="col-xs-12">
-                                <ul>
-                                 <li>Worked with a partner, Shadwell, to create a chamber crawler game in C++</li>
-                                </ul>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#cc3k" aria-expanded="false" aria-controls="cc3k"> Read More </button>
-                                <div class="collapse" id="cc3k">
-                                  <div class="well">
-                                    <p>In my 2A summer term at the University of Waterloo, I have taken CS246. In this course, I have learned C++ and OOP. For the final project of this course, we were required to work in pairs to develop a C++ game. The game choices that we had to choose from were chess, monoploy, or a chamber crawler game.</p>
-                                    <p> As I am a huge fan of Chamber Crawlers, me and my partner, Shadwell, chose to work on the Chamber Crawler game. Although we were faced with many different challenges, specificaly scheduling, memmory errors, and also different coding styles, we were able to overcome them and complete the project. All in all, this project has taught me many key computer science concepts. Specifically polymorphism, classes, objects, and also team work. </p>
-                                    <div class="row">
-                                      <div class="col-xs-12">
-                                    <img class="img-responsive" src="img/cc3k/cc3k.png">
-                                    </div>       
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <hr>
-              <div class="row">
-                  <div class="col-xs-12">
-                    <div class="row">
-                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/calculator/icon.png"></div>
-                        <div class="col-xs-8">
-                          <div class="row">
-                            <div class="col-xs-12"><h2>Calculator App</h2>
-                            <h4>Android Development</h4></div>
-                              <div class="col-xs-12">
-                                <ul>
-                                  <li>First android application developed in Android SDK with Java</li>
-                                </ul>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#calculator" aria-expanded="false" aria-controls="calculator"> Read More </button>
-                                <div class="collapse" id="calculator">
-                                  <div class="well">
-                                    <p> I have always wanted to learn android development. I wanted to do something simple to learn the basics of Android SDK, and also some java. In this project, I was able to replicate a basic calculator that does basic arithmetic operations. (+,-,*,/,%)</p>
-                                    <div class="row">
-                                      <div class="col-xs-12">
-                                    <img class="img-responsive" src="img/calculator/calculator.png">
-                                    </div>       
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                <hr>
-              <div class="row">
-                  <div class="col-xs-12">
-                    <div class="row">
-                      <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/dots/logo.png"></div>
-                        <div class="col-xs-8">
-                          <div class="row">
-                            <div class="col-xs-12"><h2>Dots</h2>
-                            <h4>Game Development</h4></div>
-                              <div class="col-xs-12">
-                                <ul>
-                                  <li>Clone of a popular game: <a href="http://weplaydots.com/twodots.html">Two Dots</a></li>
-                                </ul>
-                                <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#dot" aria-expanded="false" aria-controls="dot"> Read More </button>
-                                <div class="collapse" id="dot">
-                                  <div class="well">
-                                    <p> The game Two Dots, on the play store, was a very enjoyable puzzle game. I really liked the logic behind the game, and I wanted to try to replicate. Hence, the start of this project. I have developed the game in Unity3D and I have added touch features to be playable on my android device. To create this game I have used linked-lists to store the selected dots, and also the line renderer in Unity to dynamically connect the dots.</p>
-                                    <p><a href="game/Dots/dots.html" class="btn btn-default">Link to Game <i class="fa fa-gamepad"></i></a></p>
-                                    <div class="row">
-                                      <div class="col-xs-12">
-                                    <img class="img-responsive" src="img/dots/play1.png">
-                                    </div>       
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-xs-12">
-                      <div class="row">
-                        <div class="col-xs-8 col-sm-4"><img class="img-responsive img-circle" src="img/avatarpulse/app_logo.png"></div>
-                          <div class="col-xs-8">
-                            <div class="row">
-                              <div class="col-xs-12"><h2>AvatarPulse</h2>
-                              <h4>Android Development</h4></div>
-                                <div class="col-xs-12">
-                                  <ul>
-                                    <li>Entered the <a href="http://kissmyapp.ca/"> Osler Health Contest</a></li>
-                                  </ul>
-                                  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pulse" aria-expanded="false" aria-controls="pulse"> Read More </button>
-                                  <div class="collapse" id="pulse">
-                                    <div class="well">
-                                      <p> Made it into the top 5 pitch for the application contest by Osler Health.
-                                          Worked in a team of 2 to create a functional prototype in java utilizing 
-                                          google places, android notification system, and shared preferences to 
-                                          educate users about the health care systems in the central west region 
-                                          of Ontario
-                                      </p>
-                                      <div class="row">
-                                        <div class="col-xs-12">
-                                      <img class="img-responsive" src="img/avatarpulse/demo.jpg">
-                                      </div>       
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+  </section>
 
-        <div id="contact">
-            <center><h1> Contact Me </h1></center>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <a href="mailto:v22vuong@uwaterloo.ca">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://ca.linkedin.com/in/vuongvincent96">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="downloads/vincent_vuong_resume.pdf">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-file-pdf-o fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <p class="footer arrow"><a href="#page-top"><i class="fa fa-angle-up"></i></a></p>
-            <p class="footer">Copyright &copy; Vincent Vuong 2016</p>
+  <!-- Projects -->
+  <section>
+    <a class="nav-link" name="projects"></a>
+    <div>
+      <div class="title">
+        <span>Projects</span>
+      </div>
+      <br>
+      <div class="row container" style="margin-bottom: 0px;">
+
+        <div class="col s12 m4">
+          <div class="center container">
+            <a href="projects/avatarpulse.html"><img class="responsive-img circle" src="images/avatarpulse/app_logo.png"></a>
+            <h5 class="imageDes">AvatarPulse</h5>
+          </div>
         </div>
+
+        <div class="col s12 m4">
+          <div class="center container">
+            <a href="projects/ninjax.html"><img class="responsive-img circle" src="images/2Dplatformer/play1.png"></a>
+            <h5 class="imageDes">Ninjax</h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="center container">
+            <a href="projects/dots.html"><img class="responsive-img circle" src="images/dots/logo.png"></a>
+            <h5 class="imageDes">Dots</h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="center container">
+            <a href="projects/cc3k.html"><img class="responsive-img circle" src="images/cc3k/cc3k.png"></a>
+            <h5 class="imageDes">Chamber Crawler</h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="center container">
+            <a href="projects/destinydrawer.html"><img class="responsive-img circle" src="images/gameJam/play1.png"></a>
+            <h5 class="imageDes">Destiny Drawer</h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="center container">
+            <a href="projects/calculator.html"><img class="responsive-img circle" src="images/calculator/icon.png"></a>
+            <h5 class="imageDes">Calculator App</h5>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="center container">
+            <a href="projects/citivate.html"><img class="responsive-img circle" src="images/24hours/logo.png"></a>
+            <h5 class="imageDes">Citivate</h5>
+          </div>
+        </div>
+
+      </div>
     </div>
+    <br>
+  </section>
 
+    <!-- Contact Me -->
+  <section>
+    <a class="nav-link" name="contact"></a>
+    <div>
+      <div class="title">
+        <span>Contact Me</span>
+      </div>
+      <br>
+      <center><h5> Contact me through any of the ways below! </h5><center>
+      <br>
+      <div class="row container center">
+        <div class="col s6 m4">
+            <a href="mailto:v22vuong@uwaterloo.ca">
+              <i class="fa fa-envelope fa-5x"></i>
+            </a>
+            <br>
+            <a href="mailto:v22vuong@uwaterloo.ca">Email</a>
+        </div>
+        <div class="col s6 m4">
+            <a href="https://ca.linkedin.com/in/vuongvincent96">
+                <i class="fa fa-linkedin-square fa-5x"></i>
+            </a>
+            <br>
+            <a href="https://ca.linkedin.com/in/vuongvincent96">LinkedIn</a>
+        </div>
+        <div class="col s6 m4">
+            <a href="downloads/vincent_vuong_resume.pdf">
+                <i class="fa fa-file-text fa-5x"></i>
+            </a>
+            <br>
+            <a href="downloads/vincent_vuong_resume.pdf">Resume</a>
+        </div>
+      </div>
+    </div>
+    <br>
+  </section>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Fix nav bar
-     -->
-    <script>
-    $(document).ready(function () {
-        var nav = $('.theNavbar');
-        var navPosY = nav.offset().top;
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+        var nav = $("nav");
+        nav.hide();
 
-        function scrollDown() {
-            if ($(window).scrollTop() >= navPosY) {
-                $('.theNavbar').addClass('navbar-fixed-top');
+        function navScroll() {
+            if ($(this).scrollTop() > 80) {
+             nav.slideDown();
             } else {
-                $('.theNavbar').removeClass('navbar-fixed-top');
+              nav.slideUp();
             }
         }
-        document.onscroll = scrollDown;
+
+      $( window ).scroll(function() {
+        navScroll();
+      });
+
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
     });
+  </script>
 
-    </script>
-    <!-- google analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <!-- google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-72388705-1', 'auto');
-      ga('send', 'pageview');
+    ga('create', 'UA-72388705-1', 'auto');
+    ga('send', 'pageview');
 
-    </script>
-
-    <script src="js/wow.min.js"></script>
-    <script>
-    new WOW().init();
-    </script>
+  </script>
 
   </body>
-
-
-
 </html>

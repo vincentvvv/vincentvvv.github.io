@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Vincent Vuong</title>
+  <link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/ >
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+
+  <nav class="blue-grey darken-4">
+    <div>
+      <a href="../index.html" class="brand-logo">Vincent Vuong</a>
+      <a href="../index.html" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PROJECT -->
+  <section>
+    <div>
+      <br>
+      <br>
+      <br>
+      <div class="title">
+        <span>AvatarPulse</span>
+      </div>
+      <br>
+      <center><img class="responsive-img" src="../images/avatarpulse/app_logo.png"></center>
+      <div class="row container">
+        <div class="col s12">
+            <center><h3>Android Development</h3></center>
+        </div>
+        <div class="col s12">
+          <h5> Together with my partner, Shadwell Da Cunha, we created AvatarPulse, an application, for the <a href="http://kissmyapp.ca/">Osler Health Contest</a>. The contest required a video pitch in order to qualify for the prototyping of the application.</h5>
+          <h5> The application that we created focused on encouraging healthy habits to prevent illnesses. Specifically, the contest required us to create an application that serves the purpose of educating the people of Ontario about public health resources through the use of gamification. We incorporated the gamification aspect through the use of an avatar, that has a health bar. The user can interact with their avatar by completing daily tasks. These tasks include whether the user drank 8 cups of water, ate breakfast/lunch/dinner, brushed their teeth, took a shower, and etc. Throughout the day, tasks will be sent through push notifications. The user is then required to select yes or no. Selecting no will deplete a certain amount of HP from the avatar, and a yes will heal a certain amount of HP. </h5>
+          <br>
+          <h5>Aside from encouraging healthy habits, the application also has another aspect that allows the user to report symptoms that they are currently feeling. For example, if the user has a headache, they can report their headache. Then they will be directed to go to the nearest ER or the nearest local health care centre depending on their current condition, and also their current geolocation. In a way, this educates the user by teaching them whether their condition requires them to go to the ER. We wanted to emphasize on the issue where many people go to the ER for small conditions, specifically colds, when they can potentially go to a local health centre for the same treatment. Therefore, by routing people to the correct facilities, wait times at ERs and health centres will decrease dramatically as less people are going to the wrong facilities.</h5>
+          <br>
+          <h5> Screenshots of the application:</h5>
+        </div>
+        <div class="col s12 m6">
+          <img class="responsive-img center container" src="../images/avatarpulse/notifications.png">
+        </div>
+        <div class="col s12 m6">
+          <img class="responsive-img center container" src="../images/avatarpulse/demo.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+        var nav = $("nav");
+        nav.hide();
+
+        function navScroll() {
+            if ($(this).scrollTop() > 80) {
+             nav.slideDown();
+            } else {
+              nav.slideUp();
+            }
+        }
+
+      $( window ).scroll(function() {
+        navScroll();
+      });
+
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+    });
+  </script>
+
+  <!-- google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72388705-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  </body>
+</html>

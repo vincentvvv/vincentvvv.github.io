@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Vincent Vuong</title>
+  <link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/ >
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+
+  <nav class="blue-grey darken-4">
+    <div>
+      <a href="../index.html" class="brand-logo">Vincent Vuong</a>
+      <a href="../index.html" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PROJECT -->
+  <section>
+    <div>
+      <br>
+      <br>
+      <br>
+      <div class="title">
+        <span>Oracle Eloqua</span>
+      </div>
+      <br>
+      <center><img class="responsive-img" src="../images/oracle/oracle.png"></center>
+      <div class="row container">
+        <div class="col s12">
+            <center><h3>Co-Op Placement 1 | Dev-Ops </h3></center>
+        </div>
+        <div class="col s12">
+          <h5>My main roles included providing users with VM access, running mySQL queries, support tickets through Jira, and also hot fixes through TeamCity.</h5>
+          <h5> I was able to familiarize myself with Windows and Linux systems. Moreover, I was also able to learn about agile development and the importance of stories. Aside from my main roles, I was also assigned side projects.</h5>
+          <h5> Overall, I feel that I have learned a lot in this co-op term. Aside from technical skills, I feel that my attention to details has improved tremendously as my position was really dependent on it.</h5>
+        </div>
+        <div class="col s12">
+          <center><h4>Projects </h4></center>
+        </div>
+        <div class="col s12">
+          <h5> TeamCity Build Times</h5>
+          <h5> I have worked with TeamCity's API to automate a data collection process in order to display the data onto Grafana (a time-series metrics dashboard). This process is done through running a cron-job on a VM to run a ruby script that I have written to retrieve the build logs of each build. The logs are then parsed, and the specific data is passed into the database, influxDB. The data inside influxDB is then displayed on Grafana. This has made it a lot easier to identify which builds are slowing down development.</h5>
+          <p>Values and Database names have been removed for privacy concerns</p>
+          <img class="responsive-img container" src="../images/oracle/releaseMetrics.png">
+        </div>
+        <div class="col s12">
+          <h5> VM Usage Data</h5>
+          <h5> Moreover, I have also created another dashboard that displays data regarding different VMS, specifically the VM's cpu usage, disk space, and also RAM Usage. This process is done through writing ruby scripts for Sensu monitoring system, which populates a Graphite database.This has made the monitoring of VMs a lot easier, as the information is displayed in one dashboard. </h5>
+          <p>Values and Database names have been removed for privacy concerns</p>
+          <img class="responsive-img container" src="../images/oracle/vmMetrics.png">
+        </div>
+        <div class="col s12">
+          <h5> VM Statistics</h5>
+          <h5> I was also tasked to create a web page to display important information regarding each VM. This page is created with PHP, HTML, and CSS.
+          </h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+        var nav = $("nav");
+        nav.hide();
+
+        function navScroll() {
+            if ($(this).scrollTop() > 80) {
+             nav.slideDown();
+            } else {
+              nav.slideUp();
+            }
+        }
+
+      $( window ).scroll(function() {
+        navScroll();
+      });
+
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+    });
+  </script>
+
+  <!-- google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72388705-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  </body>
+</html>
+

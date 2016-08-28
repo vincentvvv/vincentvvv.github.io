@@ -1,0 +1,150 @@
+@font-face {
+   font-family: AvenirNextLTPro-UltLtCn;
+   src: url('../fonts/avenir-next-lt-pro/AvenirNextLTPro-UltLtCn.otf');
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+	font-family: AvenirNextLTPro-UltLtCn;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #ffffff;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+
+.downArrow {
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	margin-left: -25px;
+	font-size: 25px;
+	color: white;
+}
+
+.fill-page {
+	height: 100vh;
+}
+.threeQuarter-page {
+	height: 80vh;
+}
+
+#homeBG {
+	background: url('../images/background.png') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	color: white;
+}
+
+/*Titles*/
+.title {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3em;
+    color: #1f3142;
+}
+
+.title > span {
+    position: relative;
+    display: inline-block;
+}
+
+.title > span:before,
+.title > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #919191;
+}
+
+.title > span:before {
+    right: 100%;
+    margin-right: 1em;
+}
+
+.title > span:after {
+    left: 100%;
+    margin-left: 1em;
+}
+
+/*************/
+/* Home page */
+/*************/
+
+div.home {
+	text-align: center;
+	color: white;
+}
+
+div.home h3 {
+	padding-top: 3em;
+	font-size: 6em;
+}
+
+ div.tags {
+ 	font-size: 2em;
+ }
+
+/*************/
+/* About page */
+/*************/
+ div.aboutMe {
+ 	padding-top: 2em;
+ 	padding-bottom: 5em;
+ }
+ img.myPic {
+	width: 200px;
+	height: 200px;
+ }
+
+/*footer*/
+.footer-message {
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+}
+/* Image Wrapper to display text on hover */
+.imageWrapper {
+    position: relative;
+}
+.imageWrapper img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.imageWrapper .imageDes {
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 2px 0px;
+    color: #ffffff;
+    background: #000000;
+    text-decoration: none;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+.imageDes {
+	text-align: center;
+}
+.imageWrapper:hover .imageDes {
+    opacity: 0.8;
+}

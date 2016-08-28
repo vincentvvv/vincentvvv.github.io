@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Vincent Vuong</title>
+  <link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/ >
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+
+  <nav class="blue-grey darken-4">
+    <div>
+      <a href="../index.html" class="brand-logo">Vincent Vuong</a>
+      <a href="../index.html" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PROJECT -->
+  <section>
+    <div>
+      <br>
+      <br>
+      <br>
+      <div class="title">
+        <span>Chamber Crawler</span>
+      </div>
+      <br>
+      <center><img class="responsive-img" src="../images/cc3k/cc3kfull.png"></center>
+      <div class="row container">
+        <div class="col s12">
+            <center><h3>Terminal</h3></center>
+        </div>
+        <div class="col s12">
+          <h5> In my 2A summer term at the University of Waterloo, I have taken CS246. In this course, I have learned C++ and OOP. For the final project of this course, we were required to work in pairs to develop a C++ game. I have paired up with Shadwell Da Cunha. The game choices that we had to choose from were chess, monoploy, and a chamber crawler game.</h5>
+
+          <h5>As I am a huge fan of Chamber Crawlers, me and my partner, Shadwell, chose to work on the Chamber Crawler game. Although we were faced with many different challenges, specificaly scheduling, memmory errors, and also different coding styles, we were able to overcome them and complete the project. All in all, this project has taught me many key computer science concepts. Specifically polymorphism, classes, objects, and also team work. </h5>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+        var nav = $("nav");
+        nav.hide();
+
+        function navScroll() {
+            if ($(this).scrollTop() > 80) {
+             nav.slideDown();
+            } else {
+              nav.slideUp();
+            }
+        }
+
+      $( window ).scroll(function() {
+        navScroll();
+      });
+
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+    });
+  </script>
+
+  <!-- google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72388705-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  </body>
+</html>
