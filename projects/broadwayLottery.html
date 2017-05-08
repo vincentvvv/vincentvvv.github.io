@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Vincent Vuong</title>
+  <link rel='shortcut icon' href='../favicon.ico' type='image/x-icon'/ >
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+
+  <nav class="blue-grey darken-4">
+    <div>
+      <a href="../index.html" class="brand-logo">Vincent Vuong</a>
+      <a href="../index.html" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">swap_horiz</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="../index.html">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PROJECT -->
+  <section>
+    <div>
+      <br>
+      <br>
+      <br>
+      <div class="title">
+        <span>Broadway Lottery</span>
+      </div>
+      <br>
+      <center><img class="responsive-img" src="../images/broadwayLottery/app_logo.png" style="width:150px;height:150px;"></center>
+      <div class="row container">
+        <div class="col s12">
+            <center><h3>Android Development</h3></center>
+            <center><h3><a href="https://play.google.com/store/apps/details?id=com.vincentvuong.broadwaylottery">Download now on the Google Play Store!</a></h3></center>
+        </div>
+        <div class="col s12">
+          <h5>During my internship at Compass in New York. I really wanted to watch Broadway shows. However, I did not want to pay full price for them. Luckily, there was the Broadway Lottery, where one can enter a lottery to obtain discounted tickets. I found it really annoying to always open my laptop and enter the form manually. Hence, I created Broadway Lottery to make it much easier to enter the lottery. The app scrapes the website to get the show times and when the lottery opens. The user can create profiles to be used to auto-fill the forms. If a lottery is not open yet, the user can add it to their calendar to be reminded when to enter the lottery. This app is built using <a href="https://github.com/UrbanCompass/Snail-Kotlin">Snail</a>, a Rx Kotlin framework built by Compass. Moreover, the app currently has over 300+ downloads, and also over 800+ lottery entries!</h5>
+          <h5> I was very delighted when a co-worker from Compass, who uses Broadway Lottery daily, told me that he won 2 tickets to The Lion King!</h5>
+        </div>
+
+        <div class="col s12">
+          <img class="responsive-img center container" src="../images/broadwayLottery/win.png">
+        </div>
+
+        <div class="col s12">
+          <h5> Screenshots of the application:</h5>
+        </div>
+        <div class="col s12 m6">
+          <img class="responsive-img center container" src="../images/broadwayLottery/screenshot1.png">
+        </div>
+        <div class="col s12 m6">
+          <img class="responsive-img center container" src="../images/broadwayLottery/screenshot2.png">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+        var nav = $("nav");
+        nav.hide();
+
+        function navScroll() {
+            if ($(this).scrollTop() > 80) {
+             nav.slideDown();
+            } else {
+              nav.slideUp();
+            }
+        }
+
+      $( window ).scroll(function() {
+        navScroll();
+      });
+
+      $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html, body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+    });
+  </script>
+
+  <!-- google analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-72388705-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  </body>
+</html>
