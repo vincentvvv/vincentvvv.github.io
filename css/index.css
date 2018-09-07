@@ -93,17 +93,20 @@ div.home {
 div.home h3 {
 	padding-top: 3em;
 	font-size: 6em;
+    text-shadow: 3px 3px 4px #000000;
 }
 
  div.tags {
  	font-size: 2em;
+    text-shadow: 2px 2px 2px #000000;
  }
 
 /*************/
 /* About page */
 /*************/
+ 
  div.aboutMe {
- 	padding-top: 2em;
+ 	padding-top: 100px;
  	padding-bottom: 5em;
  }
  img.myPic {
@@ -147,4 +150,19 @@ div.home h3 {
 }
 .imageWrapper:hover .imageDes {
     opacity: 0.8;
+}
+
+.brand-logo {
+    margin-left: 24px;
+}
+
+/*************/
+/* Work */
+/*************/
+.logo {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
